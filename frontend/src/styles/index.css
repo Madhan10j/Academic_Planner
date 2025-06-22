@@ -1,0 +1,10 @@
+/* Main Styles Index */
+/* Import base styles */
+@import './App.css';
+
+/* Import page-specific styles */
+@import './pages/Tasks.css';
+@import './pages/Dashboard.css';
+@import './pages/Timetable.css';
+@import './pages/Auth.css';
+@import './pages/Profile.css'; 

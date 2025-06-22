@@ -1,0 +1,24 @@
+{
+  "name": "academic-planner-backend",
+  "version": "1.0.0",
+  "description": "Backend for Academic Planner with AI",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "natural": "^6.5.0",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
