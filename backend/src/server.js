@@ -15,7 +15,13 @@ const { sendDeadlineReminders } = require('./services/reminderService');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://academic-planner-jlmb.vercel.app', // your Vercel frontend
+    'http://localhost:5173' // local dev, optional
+  ],
+  credentials: true // if you use cookies/auth, otherwise can omit
+}));
 app.use(express.json());
 
 // Routes
