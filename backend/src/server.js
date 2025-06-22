@@ -18,8 +18,8 @@ const app = express();
 app.use(cors({
   origin: [
     'https://academic-planner-jlmb.vercel.app', // Vercel frontend
-    'http://localhost:5173', // Vite default
-    'http://localhost:5174'  // Your current local dev port
+    'http://localhost:5173', // (optional) local dev
+    'http://localhost:5174'  // (optional) local dev
   ],
   credentials: true // Only if you use cookies/auth
 }));
