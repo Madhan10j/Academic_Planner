@@ -6,7 +6,7 @@ import { Navigate, Link } from 'react-router-dom';
 const Register = () => {
   const dispatch = useDispatch();
   const { isAuthenticated, loading, error } = useSelector(state => state.auth);
-  const [form, setForm] = useState({ name: '', email: '', password: '' });
+  const [form, setForm] = useState({ name: '', username: '', email: '', password: '' });
 
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -27,6 +27,10 @@ const Register = () => {
           <div className="form-group">
             <label className="form-label">Name</label>
             <input name="name" className="form-input" value={form.name} onChange={handleChange} required />
+          </div>
+          <div className="form-group">
+            <label className="form-label">Username</label>
+            <input name="username" className="form-input" value={form.username} onChange={handleChange} required />
           </div>
           <div className="form-group">
             <label className="form-label">Email</label>

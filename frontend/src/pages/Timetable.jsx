@@ -126,18 +126,18 @@ const Timetable = () => {
 
     try {
       await dispatch(addEvent(eventData)).unwrap();
-      setShowAddModal(false);
-      setEventForm({
-        title: '',
-        type: 'class',
+    setShowAddModal(false);
+    setEventForm({
+      title: '',
+      type: 'class',
         courseName: '',
         startTime: '',
         endTime: '',
         location: '',
-        description: '',
+      description: '',
         recurring: 'none',
-        color: '#3b82f6'
-      });
+      color: '#3b82f6'
+    });
     } catch (error) {
       console.error('Failed to add event:', error);
       alert('Failed to add event. Please try again.');
