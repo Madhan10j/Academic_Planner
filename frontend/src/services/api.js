@@ -1,7 +1,19 @@
 import axios from 'axios';
 
+let baseURL;
+
+// Use local backend if running locally, otherwise use deployed backend
+if (
+  window.location.hostname === 'localhost' ||
+  window.location.hostname.startsWith('127.')
+) {
+  baseURL = 'http://localhost:5000/api'; // Local backend
+} else {
+  baseURL = 'https://academic-planner-1.onrender.com/api'; // Deployed backend
+}
+
 const api = axios.create({
-  baseURL: 'https://academic-planner-1.onrender.com/api',
+  baseURL,
 });
 
 // Add JWT token to headers if present
