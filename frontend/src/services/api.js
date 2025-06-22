@@ -9,7 +9,7 @@ if (
 ) {
   baseURL = 'http://localhost:5000/api'; // Local backend
 } else {
-  baseURL = 'https://academic-planner-1.onrender.com/api'; // Deployed backend
+  baseURL = 'https://academic-planner-2.onrender.com/api'; // Deployed backend
 }
 
 const api = axios.create({
