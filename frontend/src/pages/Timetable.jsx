@@ -224,11 +224,6 @@ const Timetable = () => {
               </div>
             ))}
           </div>
-          
-          <div className="calendar-controls" style={{ justifyContent: 'flex-start' }}>
-            <button className="edit" onClick={handleEditEvent}>Edit</button>
-            <button className="delete" onClick={handleDeleteEvent}>Delete</button>
-          </div>
         </div>
       </div>
 

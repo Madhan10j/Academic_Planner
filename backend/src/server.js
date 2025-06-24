@@ -33,7 +33,7 @@ app.use('/api/timetable', timetableRoutes);
 app.use('/api/ai', aiRoutes);
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/academic-planner', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://jmrmadhan123:madhan123@academic-planner.jbiuysg.mongodb.net/?retryWrites=true&w=majority&appName=academic-planner', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
